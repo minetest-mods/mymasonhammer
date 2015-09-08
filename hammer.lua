@@ -15,6 +15,9 @@ minetest.register_tool( "mymasonhammer:hammer",{
 	inventory_image = "mymasonhammer_hammer.png",
 	wield_image = "mymasonhammer_hammer.png",
 on_use = function(itemstack, user, pointed_thing)
+	if pointed_thing.type ~= "node" then
+		return
+	end
 	local pos = pointed_thing.under
 	local node = minetest.get_node(pos)
 	local default_material = {
