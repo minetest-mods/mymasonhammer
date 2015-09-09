@@ -137,6 +137,12 @@ minetest.register_node("mymasonhammer:"..mat.."_foot", {
 			{-0.5, -0.5, 0.4375, 0.5, 0.5, 0.5},
 		}
 	},
+   collision_box = {
+      type="fixed",
+      fixed = {
+         {-0.5, -0.5, -0.1875, 0.5, 0.5, 0.5},
+      }
+   },
 })
 
 end
