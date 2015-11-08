@@ -14,6 +14,7 @@ minetest.register_tool( "mymasonhammer:hammer",{
 	description = "Mason Hammer",
 	inventory_image = "mymasonhammer_hammer.png",
 	wield_image = "mymasonhammer_hammer.png",
+	wield_scale = {x=1,y=1,z=3},
 	tool_capabilities = {
         max_drop_level=3,
         groupcaps= {
@@ -47,13 +48,9 @@ on_use = function(itemstack, user, pointed_thing)
 		return
 	end
 		if mode == "1" then
-		local tuse = 1
 			if node.name == item then
-			tuse = 2
-				if tuse == 2 then
 				minetest.set_node(pos,{name = stair, param2=minetest.dir_to_facedir(user:get_look_dir())})
 				parti(pos)
-				end
 			end
 		end
 		if mode == "2" then
