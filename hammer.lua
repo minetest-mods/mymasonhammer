@@ -1,5 +1,6 @@
 local USES = 200
 local mode = {}
+local count = 0
 local function parti(pos)
   	minetest.add_particlespawner(25, 0.3,
 		pos, pos,
@@ -15,12 +16,6 @@ minetest.register_tool( "mymasonhammer:hammer",{
 	inventory_image = "mymasonhammer_hammer.png",
 	wield_image = "mymasonhammer_hammer.png",
 	wield_scale = {x=1,y=1,z=3},
-	tool_capabilities = {
-        max_drop_level=3,
-        groupcaps= {
-            cracky={times={[1]=4.00, [2]=1.50, [3]=1.00}, uses=70, maxlevel=1}
-					}
-		},
 on_use = function(itemstack, user, pointed_thing)
 	if pointed_thing.type ~= "node" then
 		return
@@ -49,8 +44,12 @@ on_use = function(itemstack, user, pointed_thing)
 	end
 		if mode == "1" then
 			if node.name == item then
-				minetest.set_node(pos,{name = stair, param2=minetest.dir_to_facedir(user:get_look_dir())})
+				count = count + 1
 				parti(pos)
+					if count >= 3 then
+						minetest.set_node(pos,{name = stair, param2=minetest.dir_to_facedir(user:get_look_dir())})
+						count = 0
+				end
 			end
 		end
 		if mode == "2" then
