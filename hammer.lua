@@ -100,7 +100,7 @@ minetest.register_craft({
 		recipe = {
 			{"default:steel_ingot", "default:steel_ingot", "default:steel_ingot"},
 			{"default:steel_ingot", "wool:blue", "default:steel_ingot"},
-			{"", "wool:blue", ""},		
+			{"", "wool:blue", ""},
 		},
 })
 
