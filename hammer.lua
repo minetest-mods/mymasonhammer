@@ -107,6 +107,6 @@ minetest.register_craft({
 minetest.register_craft({
 		output = "mymasonhammer:hammer",
 		recipe = {
-			{"mymasonhammer:hammer", "default:steel_ingot"},	
+			{"mymasonhammer:hammer", "default:steel_ingot"},
 		},
 })
