@@ -17,7 +17,7 @@ empty       / blue wool   / empty
 You can also repair the tool by putting it in the crafting grid with a steel ingot.
 
 
-Licence - DWYWPL
+Licence - MIT
 
 
 Forum - https://forum.minetest.net/viewtopic.php?f=9&t=13484&p=196293#p196293
