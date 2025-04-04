@@ -29,6 +29,9 @@ on_use = function(itemstack, user, pointed_thing)
 		{"default:desert_stone","default_desert_stone", "Desert Stone","stairs:stair_desert_stone"},
 		{"default:stonebrick","default_stone_brick", "Stone Brick","stairs:stair_stonebrick"},
 		{"default:desert_stonebrick","default_desert_stone_brick", "Desert Stone Brick","stairs:stair_desert_stonebrick"},
+		{"default:sandstone","default_sandstone", "Sandstone","stairs:stair_sandstone"},
+		{"default:desert_sandstone","default_desert_sandstone", "Desert Sandstone", "stairs:stair_desert_sandstone"},
+		{"default:silver_sandstone","default_silver_sandstone", "Silver Sandstone", "stairs:stair_silver_sandstone"},
 		}
 	for i in ipairs (default_material) do
 	local item = default_material [i][1]

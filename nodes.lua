@@ -4,6 +4,11 @@ local default_material = {
 		{"default:stone","default_stone", "Stone", {cracky = 3, not_in_creative_inventory=1}},
 		{"default:desert_stone","default_desert_stone", "Desert Stone", {cracky = 3, not_in_creative_inventory=1}},
 		{"default:desert_cobble","default_desert_cobble", "Desert Cobble", {cracky = 3, not_in_creative_inventory=1}},
+		{"default:sandstone","default_sandstone", "Sandstone", {cracky = 3, not_in_creative_inventory=1}},
+		{"default:desert_sandstone","default_desert_sandstone", "Desert Sandstone", {cracky = 3, not_in_creative_inventory=1}},
+		{"default:silver_sandstone","default_silver_sandstone", "Silver Sandstone", {cracky = 3, not_in_creative_inventory=1}},
+		{"default:stonebrick","default_stone_brick", "Stone Brick",{cracky = 3, not_in_creative_inventory=1}},
+		{"default:desert_stonebrick","default_desert_stone_brick", "Desert Stone Brick",{cracky = 3, not_in_creative_inventory=1}},
 		}
 for i in ipairs (default_material) do
 local item = default_material [i][1]
