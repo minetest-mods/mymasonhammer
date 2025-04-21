@@ -71,6 +71,12 @@ on_use = function(itemstack, user, pointed_thing)
 			if node.name == item then
 				minetest.set_node(pos,{name = "mymasonhammer:"..mat.."_foot", param2=minetest.dir_to_facedir(user:get_look_dir())})
 				parti(pos)
+			elseif node.name == "mymasonhammer:"..mat.."_foot" then
+				minetest.set_node(pos,{name = "mymasonhammer:"..mat.."_foot2", param2=minetest.dir_to_facedir(user:get_look_dir())})
+				parti(pos)
+			elseif node.name == "mymasonhammer:"..mat.."_foot2" then
+				minetest.set_node(pos,{name = "mymasonhammer:"..mat.."_foot3", param2=minetest.dir_to_facedir(user:get_look_dir())})
+				parti(pos)
 			end
 		end
 end
