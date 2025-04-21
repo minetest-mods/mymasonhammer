@@ -65,7 +65,7 @@ minetest.register_node("mymasonhammer:"..mat.."_ladder2", {
 	paramtype = "light",
 	paramtype2 = "facedir",
 	walkable = true,
-	--climbable = false,
+	climbable = true,
 	drop = item,
 	groups = gro,
 	node_box = {
@@ -95,7 +95,7 @@ minetest.register_node("mymasonhammer:"..mat.."_ladder3", {
 	paramtype = "light",
 	paramtype2 = "facedir",
 	walkable = true,
-	--climbable = true,
+	climbable = true,
 	drop = item,
 	groups = gro,
 	node_box = {
